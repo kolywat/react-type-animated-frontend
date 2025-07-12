@@ -1,0 +1,35 @@
+.header {
+  background: var(--color-background);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.header__logo .logo__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.header__logo img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.logo__text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.header__auth {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

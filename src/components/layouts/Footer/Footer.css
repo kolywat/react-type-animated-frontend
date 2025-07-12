@@ -1,0 +1,7 @@
+.footer-inner {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+}

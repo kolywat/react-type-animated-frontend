@@ -1,0 +1,41 @@
+.base__button {
+  color: var(--text-color);
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: 'Source Sans 3', sans-serif;
+  cursor: pointer;
+  border: none;
+  transition:
+    background-color 0.2s ease-in-out,
+    transform 0.1s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+  will-change: transform, box-shadow;
+}
+
+.base__button:hover {
+  transform: scale(1.02);
+}
+
+.base__button:active {
+  transform: scale(0.98);
+}
+
+.base__button_default {
+  background-color: var(--color-secondary);
+  color: var(--text-color);
+}
+
+.base__button_default:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+.base__button_primary {
+  background-color: var(--color-primary);
+  color: var(--text-color);
+}
+
+.base__button_primary:hover {
+  background-color: var(--color-primary-hover);
+}

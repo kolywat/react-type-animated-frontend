@@ -1,0 +1,15 @@
+[data-theme="dark"] {
+    --color-primary: #4338ca;
+    --color-secondary: #2C3545;
+    --color-primary-hover: #6c50c8;
+    --color-secondary-hover: #3a4354;
+
+    --color-background: #1E2633;
+
+    --text-color: #C4D2E2;
+    --text-muted: #94A3B8;
+
+    --wave-color-1: rgba(75, 0, 130, 0.4);   
+    --wave-color-2: rgba(148, 0, 211, 0.25); 
+    --wave-color-3: rgba(138, 43, 226, 0.25);
+}

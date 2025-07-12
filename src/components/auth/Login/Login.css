@@ -1,0 +1,171 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  background: var(--color-background);
+}
+
+.login-content {
+  width: 400px;
+  background: var(--color-background);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 2px 6px 12px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.input {
+  color: var(--text-color);
+  background-color: var(--color-secondary);
+  padding: 10px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 5px;
+  font-size: 14px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.input:hover,
+.input:focus {
+  transform: scale(1.02);
+  background-color: var(--color-secondary-hover);
+}
+
+.password-group {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.password-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--text-muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.password-toggle:hover .password-icon {
+  color: var(--text-color);
+  transform: scale(1.15);
+}
+
+.forgot-password {
+  text-align: center;
+}
+
+.forgot-password a {
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  color: var(--text-muted);
+}
+
+.login-button {
+  background-color: var(--color-primary);
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.register-link {
+  font-weight: 300;
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.register-link a {
+  font-weight: 300;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .login-container {
+    height: auto;
+    padding: 1rem 0.5rem;
+    align-items: flex-start;
+  }
+
+  .login-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1.2rem;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .input {
+    font-size: 16px;
+  }
+
+  .login-button {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .register-link,
+  .forgot-password a {
+    font-size: 13px;
+  }
+}

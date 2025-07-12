@@ -1,0 +1,92 @@
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.overview-card {
+  font-weight: 300;
+  background: var(--color-secondary);
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 260px;
+}
+
+.overview-card p {
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+/* Hover effect on desktop only */
+@media (hover: hover) and (pointer: fine) {
+  .overview-card:hover {
+    transform: translateY(-10px) scale(1.2);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.card-icon {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+}
+
+.overview-card h3 {
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.overview-card p {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+/* ========== Responsive ========== */
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+  .overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .overview-card {
+    padding: 24px;
+    min-height: auto;
+    gap: 12px;
+  }
+
+  .overview-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .overview-card p {
+    font-size: 1rem;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 400px) {
+  .overview-card {
+    padding: 20px;
+  }
+}

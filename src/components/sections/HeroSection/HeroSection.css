@@ -1,0 +1,33 @@
+.hero-section {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  padding: 2rem;
+  background: var(--color-background);
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  color: var(--color-text);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  color: var(--color-text)
+}
+
+.hero-content button {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+}
