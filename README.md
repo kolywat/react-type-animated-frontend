@@ -36,6 +36,13 @@ All layouts are flexible and adaptive.
 
 ---
 
+## 🌐 Live Demo
+
+Check out the deployed website here:  
+🔗 [react-type-animated-frontend.netlify.app](https://react-type-animated-frontend.netlify.app/)
+
+---
+
 ## 🙋‍♂️ Author
 
 Made with React and creativity — just for fun and practice
